@@ -13,7 +13,8 @@ export const Index = () => {
     // default sa search input fetch from onTermSubmit
     useEffect(() => {
         // ngaita nato way na kuha ang data dayon kai sa mag kuha pata sa response
-        // if e agi nato sa res(response) ma duha ug kuha or ma doble atong response
+        // if e agi nato sa res(response) ma duha ug kuha or ma doble sa response or data
+        // e avoid nato na mag doble pag fetch sa data or response
         // atong goal sa setSelectedVideos kuha nlng ta sa 'videos' state na naa sulod na array na g response from 'search'
         setSelectedVideo(videos[0])
     }, [videos])
